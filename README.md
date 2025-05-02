@@ -1,30 +1,56 @@
-Supply Chain Cost Analysis Dashboard
-Overview
-Power BI dashboard for analyzing supplier costs, comparing pricing scenarios, and optimizing procurement decisions across multiple parts and suppliers.
-Key Components
-Supplier Comparison
 
-Four suppliers analyzed: Widgetmakers Inc, UCell We Make, Ringo Nova, and Expellio
-Detailed cost breakdown by part number (P0380, P0604, P0622, P0706, P0914, P1010, P1125, P1227, P9091)
-Sample detailed analysis for part P1010 across all suppliers
+# Make-or-Buy Analysis for Bakery Equipment Parts
 
-Cost Metrics
+This project presents a cost-focused supply chain analysis to support a make-or-buy decision for parts used in bakery equipment maintenance. The goal is to evaluate the total cost implications of producing parts in-house versus purchasing them from external suppliers.
 
-Unit costs by supplier and volume
-Non-recurring expenses comparison
-Full cost calculation (Unit Cost × Volume + Non-recurring expenses)
-Extended cost analysis
+## Objective
 
-Volume Analysis
+To determine the most cost-effective sourcing strategy by analyzing:
 
-Cost breaks at different volume points (1000, 2000, 5000 units)
-Scenario planning tool for custom volume inputs (current scenario: 39,500 units)
+* Recurring costs of part replacement
+* Extended costs including logistics, overhead, and volume-based effects
+* Comparative supplier costs and purchase volumes
+* Total Cost of Ownership (TCO) for both internal manufacturing and external procurement
 
-Key Insights
+## Approach
 
-Ringo Nova identified as lowest cost supplier overall
-UCell We Make offers lowest scenario full cost for part P0622 ($468,554.27)
-Non-recurring expenses total: $9.87K for current scenario
+The analysis is built around cost modeling rather than quality or delivery time. It focuses on identifying which option — make or buy — results in lower long-term operational costs for a specialized bakery operation.
 
-Usage
-Compare supplier costs across different volumes, run procurement scenarios, and identify optimal supplier selection based on part requirements and order quantities.
+Key steps included:
+
+* Cost breakdown for in-house production
+* Cost breakdown per supplier
+* Recurring cost patterns over time
+* Volume sensitivity and impact on unit economics
+* Scenario comparison and breakeven points
+
+## Tools Used
+
+* DAX
+* Power BI
+* Cost modeling and volume analysis techniques
+
+## Key Outputs
+
+* Visual comparison of internal vs external cost structures
+* Volume vs unit cost simulation
+* Supplier ranking based on recurring and extended costs
+* Decision logic for optimal sourcing based on total cost
+
+## Insights
+
+* Certain high-volume parts had lower unit costs when outsourced
+* Low-volume or irregular-use parts were more economical to produce internally
+* Some suppliers had hidden extended costs affecting long-term profitability
+* Cost drivers shifted significantly with volume changes
+
+## How to Use
+
+1. Open the Power BI dashboard provided in the repository
+2. Use slicers and filters to& used alot of DAX to explore cost scenarios across different parts and volumes
+3. Review the cost breakdown tables to support decision-making
+
+## Author
+
+This project was developed by Noor Alomari as part of an applied business and supply chain analytics case focused on maintenance strategy in food industry operations.
+
